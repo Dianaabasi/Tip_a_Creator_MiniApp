@@ -1,0 +1,13 @@
+{
+    "accountAssociation": {
+      "fid": 1234,
+      "signature": "0x...",
+      "publicKey": "0x..."
+    },
+    "miniapp": {
+      "name": "Tip a Creator",
+      "version": "1",
+      "domain": "tip-a-creator.vercel.app",
+      "icon": "https://tip-a-creator.vercel.app/tip.png"
+    }
+  }

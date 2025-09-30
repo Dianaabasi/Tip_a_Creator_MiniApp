@@ -1,0 +1,86 @@
+{
+  "deployment_checklist": {
+    "pre_deployment": [
+      {
+        "task": "Environment Variables",
+        "items": [
+          "Set FIREBASE_PROJECT_ID in Vercel",
+          "Set FIREBASE_CLIENT_EMAIL in Vercel",
+          "Set FIREBASE_PRIVATE_KEY in Vercel",
+          "Set FARCASTER_MANIFEST_* variables in Vercel",
+          "Set BASE_PAY_CLIENT_ID in Vercel",
+          "Set NOTIFICATION_SECRET in Vercel",
+          "Set VERCEL_URL to production domain"
+        ]
+      },
+      {
+        "task": "Firebase Setup",
+        "items": [
+          "Create Firebase project",
+          "Enable Firestore Database",
+          "Generate service account key",
+          "Set Firestore security rules",
+          "Create composite indexes",
+          "Test database connection"
+        ]
+      },
+      {
+        "task": "Base Pay Setup",
+        "items": [
+          "Register for Base Pay client ID",
+          "Configure Base network settings",
+          "Test USDC transactions on testnet",
+          "Verify contract addresses"
+        ]
+      },
+      {
+        "task": "Farcaster Integration",
+        "items": [
+          "Generate manifest signature",
+          "Register webhook URL",
+          "Test frame metadata",
+          "Verify MiniKit integration"
+        ]
+      }
+    ],
+    "deployment": [
+      {
+        "task": "Build and Deploy",
+        "items": [
+          "Run npm run build locally",
+          "Fix any build errors",
+          "Deploy to Vercel",
+          "Verify deployment success",
+          "Test production URL"
+        ]
+      }
+    ],
+    "post_deployment": [
+      {
+        "task": "Testing",
+        "items": [
+          "Test wallet connection",
+          "Test tip creation flow",
+          "Test frame embedding",
+          "Test notifications",
+          "Test API endpoints",
+          "Verify database writes"
+        ]
+      },
+      {
+        "task": "Farcaster Registration",
+        "items": ["Submit manifest to Farcaster", "Wait for approval", "Test in Base App", "Share test frames"]
+      },
+      {
+        "task": "Monitoring",
+        "items": [
+          "Set up error tracking",
+          "Monitor API response times",
+          "Check database usage",
+          "Monitor notification delivery",
+          "Set up alerts"
+        ]
+      }
+    ]
+  }
+}
