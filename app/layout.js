@@ -23,9 +23,9 @@ export const metadata = {
     "fc:frame:image": "/splash.jpg", // Your app's preview (e.g., logo with "Tip a Creator")
     "fc:frame:button:1": "Open Tip a Creator",
     "fc:frame:button:1:action": "post", // Or "link" to redirect
-    "fc:frame:post_url": "https://your-app-url.com", // Your app's URL
+    "fc:frame:post_url": "https://tip-a-creator.vercel.app", // Your app's URL
     // Mini app specific (optional for better integration)
-    "fc:miniapp:domain": "your-app-url.com", // Your domain (without https://)
+    "fc:miniapp:domain": "tip-a-creator.vercel.app", // Your domain (without https://)
     "fc:miniapp:name": "Tip a Creator",
     "fc:miniapp:icon": "/tip.ICO", // 512x512 app icon
   },
